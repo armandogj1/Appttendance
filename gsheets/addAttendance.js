@@ -1,5 +1,5 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
-require('dotenv').config();
+// require('dotenv').config();
 
 const addAttendance = async (day, attendance) => {
   const doc = new GoogleSpreadsheet('1IdH62PeGyYls3TUbkzb5sBWNDEi3ohw8ZuoiRm25C2k');

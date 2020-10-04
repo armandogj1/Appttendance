@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const readNames = require('../gsheets/readNames.js');
 const addAttendance = require('../gsheets/addAttendance.js');
-require('dotenv').config();
+// require('dotenv').config();
 
 const app = express();
 
