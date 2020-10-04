@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../dist')));
 
+// endpoint for getting the names
 app.get('/names', async (req, res) => {
 
   try {
@@ -23,6 +24,7 @@ app.get('/names', async (req, res) => {
   }
 });
 
+// endpoint to post to spreadsheet
 app.post('/attendance', async (req, res) => {
   try {
     const saved = await addAttendance(req.body.day, req.body.students);
