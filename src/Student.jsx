@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Student = ({name, students, handleAtt}) => {
+const Student = ({name, students, handleAtt, setTally}) => {
   const [attendance, setAttendance] = useState('');
 
   useEffect(() => {
@@ -9,8 +9,12 @@ const Student = ({name, students, handleAtt}) => {
     handleAtt(newStudents);
   }, [attendance]);
 
+  useEffect(() => {
+    setTally(name, attendance);
+  }, [attendance]);
+
   const style = {
-    'background-color': (
+    'backgroundColor': (
       attendance === 'OT' ? '#a4fc97'
       : attendance === 'UT' ? '#fc9797'
       : attendance === 'ET' ? '#fcf097'
