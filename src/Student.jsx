@@ -9,8 +9,18 @@ const Student = ({name, students, handleAtt}) => {
     handleAtt(newStudents);
   }, [attendance]);
 
+  const style = {
+    'background-color': (
+      attendance === 'OT' ? '#a4fc97'
+      : attendance === 'UT' ? '#fc9797'
+      : attendance === 'ET' ? '#fcf097'
+      : attendance === 'UA' ? '#fc9797'
+      : attendance === 'EA' ? '#fcf097'
+      : 'none'),
+  };
+
   return (
-    <form className='students' onChange={(e) => setAttendance(e.target.value)} style={{'background-color': (attendance === 'OT' ? 'green' : attendance === 'UT' ? 'yellow' : 'white')}}>
+    <form className='students' onChange={(e) => setAttendance(e.target.value)} style={style}>
       <h5>{name}</h5>
       <label>
         On Time:
