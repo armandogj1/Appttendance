@@ -10,7 +10,7 @@ const Student = ({name, students, handleAtt}) => {
   }, [attendance]);
 
   return (
-    <form className='students' onChange={(e) => setAttendance(e.target.value)}>
+    <form className='students' onChange={(e) => setAttendance(e.target.value)} style={{'background-color': (attendance === 'OT' ? 'green' : attendance === 'UT' ? 'yellow' : 'white')}}>
       <h5>{name}</h5>
       <label>
         On Time:
