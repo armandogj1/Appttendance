@@ -38,7 +38,7 @@ const Template = ({name, attendance}) => {
           </p>
           <p>
             Warmly,
-            Your Hack Reactor NYC Team`
+            Your Hack Reactor NYC Team
           </p>
         </div> ):
       'nothing to email';
