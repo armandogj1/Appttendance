@@ -8,7 +8,7 @@
     "build-dev": "webpack -d --mode development --watch",
     "heroku-postbuild": "webpack -p",
     "start": "node server",
-    "start-dev": "nodemon server"
+    "start-dev": "DEV=true nodemon server"
   },
   "author": "'armando garcia-jacquier'",
   "license": "MIT",
