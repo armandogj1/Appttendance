@@ -20,9 +20,12 @@ SHEETID=xxxxxxxxxxxxxxxxxxxxxx
 ```
 * Include the necessary permission files either using the heroku dashboard or the CLI.
 * Create a google sheet and share it with the app by using the service email on the browser and including the sheetId from the url. Save it as an env variable.
-* Include students names in the first column 
 
 ![SHEETID](readmeFiles/sheetId.png)
+
+* Include students names in the first column
+
+![tableExample](/readmeFiles/tableExample.png)
 
 ### Run Appttendance
 
