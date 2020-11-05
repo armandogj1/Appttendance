@@ -8,7 +8,6 @@ A heroku deployable react app to take student attendance. Attendance data persis
 
 * Fork the app's repo and deploy to heroku by creating a remote.
 * Setup a google sheets api project, store the service account email and private key in a .env file to run app locally. Pass them as env variables to the deployed heroku app.
-* Include the necessary permission files either using the heroku dashboard or the CLI.
 
 ```
 GOOGLE_SERVICE_ACCOUNT_EMAIL=xxxxxxxx@xxxxxxx.iam.gserviceaccount.com
@@ -19,8 +18,9 @@ GOOGLE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\
 
 SHEETID=xxxxxxxxxxxxxxxxxxxxxx
 ```
-
+* Include the necessary permission files either using the heroku dashboard or the CLI.
 * Create a google sheet and share it with the app by using the service email on the browser and including the sheetId from the url. Save it as an env variable.
+* Include students names in the first column 
 
 ![SHEETID](readmeFiles/sheetId.png)
 
