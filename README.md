@@ -25,11 +25,11 @@ SHEETID=xxxxxxxxxxxxxxxxxxxxxx
 
 - Create a google sheet and share it with the app by using the service email on the browser and including the sheetId from the url. Save it as an env variable.
 
-<img src='readmeFiles/tableExample.png' width=500/>
+<img src='readmeFiles/tableExample.png' width=500 />
 
 - Include students names in the first column, these will be used to populate the React App
 
-<img src='readmeFiles/sheetId.png' width=500 />
+<img src='readmeFiles/sheetId.png' width=600 />
 
 ### Run Appttendance
 
