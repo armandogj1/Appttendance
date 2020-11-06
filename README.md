@@ -25,11 +25,11 @@ SHEETID=xxxxxxxxxxxxxxxxxxxxxx
 
 - Create a google sheet and share it with the app by using the service email on the browser and including the sheetId from the url. Save it as an env variable.
 
-![SHEETID](readmeFiles/sheetId.png)
+<img src='readmeFiles/tableExample.png' style='border-radius:10px; align:right;' width=500/>
 
 - Include students names in the first column, these will be used to populate the React App
 
-![table](readmeFiles/tableExample.png)
+<img src='readmeFiles/sheetId.png' style='border-radius:10px;' width=500/>
 
 ### Run Appttendance
 
@@ -37,4 +37,4 @@ Go to the app's url.
 Students will be available with a choice of radio buttons.
 Include the week and day of the program in the text field, attendance won't submit until you've done so. Background will change based on their status. If late templates will render at the bottom to copy and paste into email.
 
-![preview](readmeFiles/preview.png)
+<img src='readmeFiles/preview.png' style='border-radius:10px;'  width=500/>
