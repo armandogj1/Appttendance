@@ -29,7 +29,7 @@ SHEETID=xxxxxxxxxxxxxxxxxxxxxx
 
 - Include students names in the first column, these will be used to populate the React App
 
-<img src='readmeFiles/sheetId.png' width=500 align=center/>
+<img src='readmeFiles/sheetId.png' width=500 />
 
 ### Run Appttendance
 
