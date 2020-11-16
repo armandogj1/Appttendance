@@ -4,6 +4,19 @@ import { ThemeContext } from './ThemeContext';
 const ThemeSlider = () => {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 
+	const handleToggle = () => {
+		let hasTheme = localStorage.getItem('appTendanceDark');
+
+		if (hasTheme === null) {
+			localStorage.setItem('appTendanceDark', 'true');
+		} else {
+			const flipTheme = JSON.parse(hasTheme);
+			localStorage.setItem('appTendanceDark', JSON.stringify(!flipTheme));
+		}
+
+		toggleTheme();
+	};
+
 	const contStyle = {
 		display: 'flex',
 		padding: '0px',
@@ -22,7 +35,7 @@ const ThemeSlider = () => {
 	};
 
 	return (
-		<div id='slider' style={contStyle} onClick={() => toggleTheme()}>
+		<div id='slider' style={contStyle} onClick={() => handleToggle()}>
 			<div style={rockerStyle}>{theme ? '🌘' : '🌕'}</div>
 		</div>
 	);

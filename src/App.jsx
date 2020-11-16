@@ -30,6 +30,14 @@ const App = (props) => {
 				originalTally.current = result.data[1];
 			})
 			.catch((err) => console.log('server error'));
+
+		const hasTheme = localStorage.getItem('appTendanceDark');
+		if (hasTheme) {
+			const themeBool = JSON.parse(hasTheme);
+			if (themeBool) {
+				toggleTheme();
+			}
+		}
 	}, []);
 
 	const handleSubmit = () => {
