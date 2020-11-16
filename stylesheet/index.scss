@@ -1,25 +1,43 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.night {
+	background-color: rgb(40, 40, 40);
+	color: white;
+
+	button {
+		background-color: rgb(75, 75, 75);
+		color: white;
+	}
+
+	input {
+		background-color: rgb(82, 82, 82);
+		color: white;
+	}
+}
 .container {
-  display: grid;
-  width: 80vw;
+	display: grid;
+	align-self: auto;
+	margin: 10px;
 
-  .students {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    border-bottom: solid 2px black;
-    // align-self: center;
-    // justify-self: center;
-    h5 {
-      margin: 0;
-    }
+	.students {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		border-bottom: solid 2px black;
+		h5 {
+			margin: 0;
+		}
 
-    label {
-      justify-self: center;
-      align-self: center;
-    }
-  }
+		label {
+			justify-self: center;
+			align-self: center;
+		}
+	}
 
-  .templates {
-    border: solid 2px black;
-    border-radius: 5px;
-  }
+	.templates {
+		border: solid 2px black;
+		border-radius: 5px;
+	}
 }
