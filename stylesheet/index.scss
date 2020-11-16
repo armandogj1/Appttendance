@@ -22,6 +22,21 @@ body {
 	align-self: auto;
 	margin: 10px;
 
+	#menu {
+		display: flex;
+		justify-content: space-between;
+
+		input {
+			display: flex;
+			justify-self: flex-start;
+		}
+
+		#slider {
+			display: flex;
+			justify-self: flex-end;
+		}
+	}
+
 	.students {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);

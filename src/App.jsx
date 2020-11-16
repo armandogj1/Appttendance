@@ -3,6 +3,7 @@ import axios from 'axios';
 import Student from './Student.jsx';
 import Template from './Template.jsx';
 import { ThemeContext } from './ThemeContext';
+import ThemeSlider from './ThemeSlider';
 
 const App = (props) => {
 	const [students, setStudents] = useState({});
@@ -68,10 +69,10 @@ const App = (props) => {
 
 	return (
 		<div className={`container ${theme ? 'night' : 'day'}`}>
-			<button key='theme' onClick={() => toggleTheme()}>
-				Theme
-			</button>
-			<input key='day' type='text' onChange={(e) => setDay(e.target.value)} />
+			<div id='menu'>
+				<input key='day' type='text' onChange={(e) => setDay(e.target.value)} />
+				<ThemeSlider />
+			</div>
 			{Object.keys(students).map((student) => (
 				<Student
 					key={student}
