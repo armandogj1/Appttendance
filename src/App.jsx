@@ -10,6 +10,7 @@ const App = (props) => {
 	const [day, setDay] = useState('');
 	const [tally, setTally] = useState({});
 	const originalTally = useRef({});
+	const [posted, setPost] = useState(false);
 
 	const { theme, toggleTheme } = useContext(ThemeContext);
 
@@ -46,7 +47,10 @@ const App = (props) => {
 		if (day) {
 			axios
 				.post('/attendance', attendance)
-				.then((result) => console.log('submitted'))
+				.then((result) => {
+					console.log('submitted');
+					setPost(true);
+				})
 				.catch((err) => console.log('error'));
 		} else {
 			console.log('Please provide a WXDX to submit');
@@ -109,6 +113,7 @@ const App = (props) => {
 
 				return el;
 			})}
+			{posted && <div id='modal'>POSTED</div>}
 		</div>
 	);
 };
