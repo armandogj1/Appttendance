@@ -38,3 +38,4 @@ Students will be available with a choice of radio buttons.
 Include the week and day of the program in the text field, attendance won't submit until you've done so. Background will change based on their status. If late templates will render at the bottom to copy and paste into email.
 
 <img src='readmeFiles/preview.png' width=500/>
+<img src='readmeFiles/previewDark.png' width=500/>
